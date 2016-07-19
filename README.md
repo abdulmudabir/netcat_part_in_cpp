@@ -10,7 +10,7 @@ netcat_part [OPTIONS] dest_ip [file]
 -v Verbose output
 -m "MSG" Send the message specified 
 Warning: if you specify this option, you do not specify a file
--p portSet the port to connect on (dflt: 6767)
+-p port The port to connect on (dflt: 6767)
 -n bytes Number of bytes to send, defaults whole file
 -o offset Offset into file to start sending
 -l Listen on port instead of connecting and write output to file 
