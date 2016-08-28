@@ -13,10 +13,12 @@ EXECUTABLE = netcat_part
 all: netcat
 
 netcat: $(OBJECTS)
-	$(CC) $^ -o $(EXECUTABLE)  # $^ => all dependencies.
+	$(CC) $^ -o $(EXECUTABLE)
+# $^ => all dependencies.
 
 %.o: %.cxx
-	$(CC) $(CFLAGS) $< -o $@   # $< => each dependency; $@ => each target.
+	$(CC) $(CFLAGS) $< -o $@
+# $< => each dependency; $@ => each target.
 
 clean:
 	rm -vf *.o *~ netcat_part
